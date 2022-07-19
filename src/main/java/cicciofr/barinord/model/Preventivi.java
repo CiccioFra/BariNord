@@ -1,7 +1,8 @@
 package cicciofr.barinord.model;
 
-public class preventivo {
-    private int id;
+public class Preventivi {
+
+    private int idPreventivo;
     private String nomeAzienda;
     private String nomePiano;
     private int nrMaxFermate;
@@ -9,12 +10,22 @@ public class preventivo {
     private int nrMaxZone;
     private double prezzo;
 
-    public int getId() {
-        return id;
+    public Preventivi(int idPreventivo, String nomeAzienda, String nomePiano, int nrMaxFermate, int nrMaxFermateExtra, int nrMaxZone, double prezzo) {
+        this.idPreventivo = idPreventivo;
+        this.nomeAzienda = nomeAzienda;
+        this.nomePiano = nomePiano;
+        this.nrMaxFermate = nrMaxFermate;
+        this.nrMaxFermateExtra = nrMaxFermateExtra;
+        this.nrMaxZone = nrMaxZone;
+        this.prezzo = prezzo;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getIdPreventivo() {
+        return idPreventivo;
+    }
+
+    public void setIdPreventivo(int idPreventivo) {
+        this.idPreventivo = idPreventivo;
     }
 
     public String getNomeAzienda() {
@@ -63,17 +74,5 @@ public class preventivo {
 
     public void setPrezzo(double prezzo) {
         this.prezzo = prezzo;
-    }
-
-    public preventivo(int id, String nomeAzienda, String nomePiano, int nrMaxFermate, int nrMaxFermateExtra, int nrMaxZone, double prezzo) {
-        this.id = id;
-        this.nomeAzienda = nomeAzienda;
-        this.nomePiano = nomePiano;
-        this.nrMaxFermate = nrMaxFermate;
-        this.nrMaxFermateExtra = nrMaxFermateExtra;
-        this.nrMaxZone = nrMaxZone;
-        this.prezzo = prezzo;
-
-
     }
 }

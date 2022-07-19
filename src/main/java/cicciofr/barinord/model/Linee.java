@@ -1,10 +1,10 @@
 package cicciofr.barinord.model;
 
-public class linea {
+public class Linee {
     private int id;
     private String nome;
 
-    public linea(int id, String nome) {
+    public Linee(int id, String nome) {
         this.id = id;
         this.nome = nome;
     }

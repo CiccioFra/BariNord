@@ -1,12 +1,12 @@
 package cicciofr.barinord.model;
 
-public class fermate {
+public class Fermate {
     private int id;
     private String nome;
     private int urbana;
-    private char zona;
+    private String zona;
 
-    public fermate(int id, String nome, int urbana, char zona) {
+    public Fermate(int id, String nome, int urbana, String zona) {
         this.id = id;
         this.nome = nome;
         this.urbana = urbana;
@@ -37,11 +37,11 @@ public class fermate {
         this.urbana = urbana;
     }
 
-    public char getZona() {
+    public String getZona() {
         return zona;
     }
 
-    public void setZona(char zona) {
+    public void setZona(String zona) {
         this.zona = zona;
     }
 }
