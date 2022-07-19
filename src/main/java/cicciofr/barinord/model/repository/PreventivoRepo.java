@@ -14,8 +14,8 @@ public class PreventivoRepo {
         List<Preventivi> preventivi = new ArrayList<>();
         try {
             Connection conn = DriverManager.getConnection(URL, USER, PW);
-            PreparedStatement stmt = conn.prepareStatement("select id_preventivo,nome_azienda,nome_piano,nr_max_fermate," +
-                    "nr_max_fermate_extra,nr_max_zone,prezzo from preventivo");
+            PreparedStatement stmt = conn.prepareStatement("select id_preventivo, nome_azienda, nome_piano, nr_max_fermate," +
+                    "nr_max_fermate_extra, nr_max_zone, prezzo from preventivi");
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 // creo un preventivo con i dati del DB
