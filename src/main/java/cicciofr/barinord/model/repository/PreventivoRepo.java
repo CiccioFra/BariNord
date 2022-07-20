@@ -32,8 +32,10 @@ public class PreventivoRepo {
                 // aggiungo alla lista
                 preventivi.add(preventivo);
             }
-
-        } catch (SQLException e) {
+            stmt.close();
+            conn.close();
+        }
+        catch (SQLException e) {
             e.printStackTrace();
         }
         //restituisco la lista

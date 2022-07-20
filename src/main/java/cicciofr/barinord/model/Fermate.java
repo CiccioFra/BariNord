@@ -44,4 +44,14 @@ public class Fermate {
     public void setZona(String zona) {
         this.zona = zona;
     }
+
+    @Override
+    public String toString() {
+        return "Fermata{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", in centro urbano='" + urbana + '\'' +
+                ", zona='" + zona + '\'' +
+                '}';
+    }
 }
