@@ -11,6 +11,12 @@ public class LineaConPreventivo extends Linee{
         this.preventivo = preventivo;
     }
 
+    // alternativo overriding in caso si passi direttamente l'oggetto
+    public LineaConPreventivo(Linee linea, Preventivi preventivo) {
+        super(linea.getId(), linea.getNome(), linea.getFermate());
+        this.preventivo = preventivo;
+    }
+
     public Preventivi getPreventivo() {
         return preventivo;
     }
